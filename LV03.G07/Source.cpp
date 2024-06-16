@@ -16,7 +16,7 @@ struct Patient
 };
 
 Patient newPatient(int& lastId);
-void treatPatient(Patient& currentPatient);
+void treatPatient(Patient currentPatient);
 void printPatient(const Patient& currentPatient);
 Patient& findPatient(std::vector<Patient>& patients);
 
