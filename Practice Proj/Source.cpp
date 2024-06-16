@@ -1,15 +1,34 @@
 #include <iostream>
+#include <string>
+#include <array>
 #include <vector>
-using namespace std;
 
-int main() {
+struct Bank
+{
+	int id{};
+	float balance{}; 
+	std::string firstName{};
+	std::string lastName{};
 
-	int a{ 3 };
-	int b{ a };
+};
 
-	int& c{ a };
-	a = 5; 
+Bank buildAccount(int id, float balance, std::string firstName, std::string lastName);
+
+int main()
+{
+
+	buildAccount(id, balance, firstName, lastName);
+
+}
+
+Bank buildAccount(int id, float balance, std::string firstName, std::string lastName)
+{
+
+	std::vector <Bank> accounts;
+	accounts.push_back(Bank());
 
 
-
+	std::cout << "give an ID: " << std::endl;
+	std::cin >> accounts.back().id;
+	return Bank();
 }
