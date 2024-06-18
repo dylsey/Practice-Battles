@@ -16,13 +16,13 @@ void savePoints(const std::string& fileName, const std::vector<Point>& points);
 
 int main()
 {
-	std::random_device seed;
-	std::default_random_engine e(seed());
-	std::normal_distribution success(20.0, 2.0);
-	for (int i{ 0 }; i < 25; i++)
-	{
-		cout << success(e) << endl;
-	}
+	//std::random_device seed;
+	//std::default_random_engine e(seed());
+	//std::normal_distribution success(20.0, 2.0);
+	//for (int i{ 0 }; i < 25; i++)
+	//{
+	//	cout << success(e) << endl;
+	//}
 
 	/*std::bernoulli_distribution willTrip(.5);
 
@@ -34,7 +34,8 @@ int main()
 	{
 		cout << "you manage to do a cartwheel down the stairs" << endl;
 	}*/
-	/*const std::string fileName{ "message.txt" };
+
+	const std::string fileName{ "message.txt" };
 	std::vector<Point> points{ loadPoints(fileName) };
 	if (points.size() == 0)
 	{
@@ -50,7 +51,7 @@ int main()
 		cout << "point x: " << point.x << " " << "point.y: " << point.y << endl;
 	}
 
-	savePoints(fileName, points);*/
+	savePoints(fileName, points);
 }
 
 std::vector<Point> loadPoints(const std::string& fileName)
