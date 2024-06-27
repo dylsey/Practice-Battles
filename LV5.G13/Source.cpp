@@ -53,8 +53,8 @@ Patient& findPatient(std::vector<Patient*>& patients)
 		{
 			//if (patient->matchIDs(temp))
 		//	{
-				delete patient;
-		//	}
+			delete patient;
+			//	}
 		}
 		patients.clear();
 
